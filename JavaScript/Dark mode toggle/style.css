@@ -18,7 +18,6 @@ body{
 body.dark{
     background-color: #1f1f1f;
     color: white
-    
 }
 
 .toggle-container{
@@ -46,5 +45,4 @@ body.dark label{
 
 input{
     visibility: hidden;
-
 }
