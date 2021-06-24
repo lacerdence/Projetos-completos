@@ -1,0 +1,105 @@
+unit U_pesq_produto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, U_Pesquisa_Padrao, Data.DB,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.Mask, Vcl.ExtCtrls;
+
+type
+  TFrm_pesq_produto = class(Tfrm_pesquisa_padrao)
+    Q_pesq_padraoID_PRODUTO: TIntegerField;
+    Q_pesq_padraoDESCRICAO: TStringField;
+    Q_pesq_padraoVL_CUSTO: TFMTBCDField;
+    Q_pesq_padraoVL_VENDA: TFMTBCDField;
+    Q_pesq_padraoESTOQUE: TFMTBCDField;
+    Q_pesq_padraoESTOQUE_MIN: TFMTBCDField;
+    Q_pesq_padraoUNIDADE: TStringField;
+    Q_pesq_padraoCADASTRO: TDateField;
+    Q_pesq_padraoID_FORNECEDOR: TIntegerField;
+    Q_pesq_padraoNOME: TStringField;
+    procedure bt_pesquisaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Frm_pesq_produto: TFrm_pesq_produto;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrm_pesq_produto.bt_pesquisaClick(Sender: TObject);
+begin
+  Q_pesq_padrao.Close;
+    Q_pesq_padrao.SQL.Add('');
+    Q_pesq_padrao.Params.Clear;
+    Q_pesq_padrao.SQL.Clear;
+    Q_pesq_padrao.SQL.Add('SELECT ID_PRODUTO, '
+                          +'A.DESCRICAO, '
+                          +'A.VL_CUSTO, '
+                          +'A.VL_VENDA, '
+                          +'A.ESTOQUE, '
+                          +'A.ESTOQUE_MIN,'
+                          +'A.UNIDADE, '
+                          +'A.CADASTRO,  '
+                          +'A.ID_FORNECEDOR,'
+                          +'B.NOME '
+                          +'from produto A '
+                          +'inner join fornecedor B on B.ID_FORNECEDOR = A.ID_FORNECEDOR');
+
+
+  case cb_chave_pesquisa.ItemIndex of
+    0:begin    // PESQUISA POR CÓDIGO DE USUÁRIO
+      Q_pesq_padrao.SQL.Add('WHERE ID_PRODUTO =:PID_PRODUTO');
+      Q_pesq_padrao.ParamByName('PID_PRODUTO').AsString:=Ed_nome.Text;
+    end;
+
+    1:begin   // PESQUISA POR NOME
+      Q_pesq_padrao.SQL.Add('WHERE DESCRICAO LIKE :PDESCRICAO');
+      Q_pesq_padrao.ParamByName('PDESCRICAO').AsString:= '%' + Ed_nome.Text + '%';
+    end;
+
+     2:begin  // PESQUISA POR DATA
+      Q_pesq_padrao.SQL.Add('WHERE CADASTRO LIKE :PCADASTRO');
+      Q_pesq_padrao.ParamByName('PCADASTRO').AsDate:=StrToDate(mk_inicio.Text);
+    end;
+
+
+    3:begin  // PESQUISA POR PERIODO
+      Q_pesq_padrao.SQL.Add('WHERE CADASTRO BETWEEN :PINICIO AND :PFIM');
+      Q_pesq_padrao.ParamByName('PINICIO').AsDate:=StrToDate(mk_inicio.Text);
+      Q_pesq_padrao.ParamByName('PFIM').AsDate:=StrToDate(mk_fim.Text);
+    end;
+
+    4:begin  // ORDENAÇÃO
+      Q_pesq_padrao.SQL.Add('ORDER BY ID_PRODUTO');
+    end;
+
+    5:begin  // FORNECEDOR
+      Q_pesq_padrao.SQL.Add('WHERE ID_FORNECEDOR =:PID_FORNECEDOR');
+      Q_pesq_padrao.ParamByName('PID_FORNECEDOR').AsString:=Ed_nome.Text;
+    end;
+
+  end;
+
+  Q_pesq_padrao.Open;
+
+  if Q_pesq_padrao.IsEmpty then
+  begin
+  MessageDlg('Registro não encontrato !', MtInformation, [mbOk],0);
+  end
+  else
+  abort;
+
+
+end;
+
+end.

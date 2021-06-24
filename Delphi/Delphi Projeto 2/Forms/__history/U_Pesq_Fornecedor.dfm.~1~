@@ -1,0 +1,5 @@
+inherited Frm_pesq_fornecedor: TFrm_pesq_fornecedor
+  Caption = 'PESQUISA FORNECEDORES'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

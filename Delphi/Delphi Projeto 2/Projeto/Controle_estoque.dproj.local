@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/01 08:12:00.000.040,=C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/01 08:20:43.000.641,=C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/03 09:30:06.000.258,=C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/03 09:33:16.000.720,C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_Principal.dfm</Transaction>
+    <Transaction>2021/06/03 09:33:16.000.720,C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_Principal.pas</Transaction>
+    <Transaction>2021/06/03 09:34:01.000.291,C:\Users\vinni\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\ESTOQUE DELPHI\Projeto\Controle_estoque.dproj</Transaction>
+    <Transaction>2021/06/04 07:16:22.000.503,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/04 07:17:06.000.294,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_DM.pas</Transaction>
+    <Transaction>2021/06/04 07:17:06.000.294,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_DM.dfm</Transaction>
+    <Transaction>2021/06/04 07:23:35.000.916,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/04 07:24:54.000.996,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_padrao.pas</Transaction>
+    <Transaction>2021/06/04 07:24:54.000.996,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_padrao.dfm</Transaction>
+    <Transaction>2021/06/04 16:45:36.000.109,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/04 16:47:24.000.633,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_usuario.pas</Transaction>
+    <Transaction>2021/06/04 16:47:24.000.633,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_usuario.dfm</Transaction>
+    <Transaction>2021/06/07 08:25:09.000.229,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/07 08:30:46.000.388,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_Empresa.dfm</Transaction>
+    <Transaction>2021/06/07 08:30:46.000.388,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_Empresa.pas</Transaction>
+    <Transaction>2021/06/08 07:24:24.000.172,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 07:25:15.000.227,C:\ESTOQUE DELPHI\Forms\U_cliente.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/08 07:25:15.000.227,C:\ESTOQUE DELPHI\Forms\U_cliente.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 08:46:34.000.652,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 08:47:56.000.262,C:\ESTOQUE DELPHI\Forms\U_Fornecedor.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 08:47:56.000.262,C:\ESTOQUE DELPHI\Forms\U_Fornecedor.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/08 10:54:22.000.957,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 11:25:09.000.987,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_produto.pas</Transaction>
+    <Transaction>2021/06/08 11:25:09.000.987,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_produto.dfm</Transaction>
+    <Transaction>2021/06/08 15:37:19.000.910,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 15:39:46.000.783,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_Forma_pgto.pas</Transaction>
+    <Transaction>2021/06/08 15:39:46.000.783,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_Forma_pgto.dfm</Transaction>
+    <Transaction>2021/06/09 07:28:47.000.112,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/09 07:29:34.000.612,C:\ESTOQUE DELPHI\Forms\U_Pesquisa_Padrao.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/09 07:29:34.000.612,C:\ESTOQUE DELPHI\Forms\U_Pesquisa_Padrao.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/09 10:04:41.000.263,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/09 10:06:13.000.526,C:\ESTOQUE DELPHI\Forms\U_pesquisa_usuario.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/09 10:06:13.000.526,C:\ESTOQUE DELPHI\Forms\U_pesquisa_usuario.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/11 07:24:20.000.546,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/11 07:24:51.000.363,C:\ESTOQUE DELPHI\Forms\U_pesq_cliente.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/11 07:24:51.000.363,C:\ESTOQUE DELPHI\Forms\U_pesq_cliente.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/11 12:34:20.000.071,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/11 12:35:22.000.572,C:\ESTOQUE DELPHI\Forms\U_Pesq_Fornecedor.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/11 12:35:22.000.572,C:\ESTOQUE DELPHI\Forms\U_Pesq_Fornecedor.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/12 16:38:07.000.408,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/12 16:39:39.000.744,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_pesq_produto.dfm</Transaction>
+    <Transaction>2021/06/12 16:39:39.000.744,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_pesq_produto.pas</Transaction>
+    <Transaction>2021/06/16 08:31:15.000.959,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 08:33:13.000.705,C:\ESTOQUE DELPHI\Forms\U_movimento_padrao.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 08:33:13.000.705,C:\ESTOQUE DELPHI\Forms\U_movimento_padrao.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/16 10:25:15.000.463,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 10:27:05.000.523,C:\ESTOQUE DELPHI\Forms\U_compra01.pas=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 10:27:05.000.523,C:\ESTOQUE DELPHI\Forms\U_compra01.dfm=C:\ESTOQUE DELPHI\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2021/06/21 09:51:21.000.189,=C:\ESTOQUE DELPHI\Projeto\Unit1.pas</Transaction>
+    <Transaction>2021/06/21 09:54:45.000.764,C:\ESTOQUE DELPHI\Projeto\Unit1.dfm=C:\ESTOQUE DELPHI\Forms\U_pesq_compra.dfm</Transaction>
+    <Transaction>2021/06/21 09:54:45.000.764,C:\ESTOQUE DELPHI\Projeto\Unit1.pas=C:\ESTOQUE DELPHI\Forms\U_pesq_compra.pas</Transaction>
+  </Transactions>
+</BorlandProject>

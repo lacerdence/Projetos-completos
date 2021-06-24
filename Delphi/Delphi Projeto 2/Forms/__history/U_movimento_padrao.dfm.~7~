@@ -1,0 +1,84 @@
+inherited Frm_padrao_movimento: TFrm_padrao_movimento
+  Caption = 'Formul'#225'rio padr'#227'o de movimento'
+  ClientHeight = 521
+  Position = poDesigned
+  ExplicitHeight = 550
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel2: TPanel
+    Top = 436
+    inherited DBNavigator1: TDBNavigator
+      Left = 712
+      Width = 308
+      Hints.Strings = ()
+      ExplicitLeft = 712
+      ExplicitWidth = 308
+    end
+    object BitBtn1: TBitBtn
+      Left = 10
+      Top = 20
+      Width = 92
+      Height = 45
+      Caption = 'BitBtn1'
+      TabOrder = 1
+    end
+    object BitBtn2: TBitBtn
+      Left = 108
+      Top = 20
+      Width = 92
+      Height = 45
+      Caption = 'BitBtn1'
+      TabOrder = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 206
+      Top = 20
+      Width = 92
+      Height = 45
+      Caption = 'BitBtn1'
+      TabOrder = 3
+    end
+    object BitBtn4: TBitBtn
+      Left = 304
+      Top = 20
+      Width = 92
+      Height = 45
+      Caption = 'BitBtn1'
+      TabOrder = 4
+    end
+  end
+  object Panel3: TPanel [2]
+    Left = 0
+    Top = 49
+    Width = 1032
+    Height = 110
+    Align = alTop
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 2
+  end
+  object Panel4: TPanel [3]
+    Left = 0
+    Top = 366
+    Width = 1032
+    Height = 70
+    Align = alBottom
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 3
+    ExplicitTop = 344
+  end
+  object DBGrid1: TDBGrid [4]
+    Left = 0
+    Top = 159
+    Width = 1032
+    Height = 207
+    Align = alClient
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+end

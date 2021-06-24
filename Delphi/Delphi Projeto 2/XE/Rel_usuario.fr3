@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited Version="6.2.1" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44361,3751950579" ReportOptions.Description.Text="" ReportOptions.LastChange="44361,5658397106" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="20" RightMargin="20" TopMargin="20" BottomMargin="20" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="15" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="Título" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="102,04731" Left="0" Top="18,89765" Width="642,5201">
+      <TfrxMemoView Name="Memo1" Align="baWidth" AllowVectorExport="True" Left="0" Top="71,81107" Width="642,5201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="RELATÓRIO DE USUARIOS DO SISTEMA"/>
+      <TfrxMemoView Name="Date" IndexTag="1" AllowVectorExport="True" Left="351,49629" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Time" IndexTag="1" AllowVectorExport="True" Left="453,5436" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[Time]"/>
+      <TfrxMemoView Name="Page" IndexTag="1" AllowVectorExport="True" Left="555,59091" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[Page]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="181,41744" Width="642,5201" ColumnWidth="0" ColumnGap="0" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" RowCount="0">
+      <TfrxMemoView Name="frxDB_usuariosID_USUARIO" IndexTag="1" Align="baWidth" AllowVectorExport="True" Left="0" Top="3,77953" Width="79,37013" Height="18,89765" DataField="ID_USUARIO" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" Frame.Typ="0" Text="[frxDB_usuarios.&#34;ID_USUARIO&#34;]"/>
+      <TfrxMemoView Name="frxDB_usuariosNOME" IndexTag="1" Align="baWidth" AllowVectorExport="True" Left="79,37013" Top="3,77953" Width="173,85838" Height="18,89765" DataField="NOME" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" Frame.Typ="0" Text="[frxDB_usuarios.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="frxDB_usuariosTIPO" IndexTag="1" Align="baWidth" AllowVectorExport="True" Left="253,22851" Top="3,77953" Width="166,29932" Height="18,89765" DataField="TIPO" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" Frame.Typ="0" Text="[frxDB_usuarios.&#34;TIPO&#34;]"/>
+      <TfrxMemoView Name="frxDB_usuariosCADASTRO" IndexTag="1" Align="baWidth" AllowVectorExport="True" Left="419,52783" Top="3,77953" Width="222,99227" Height="18,89765" DataField="CADASTRO" DataSet="Dataset_pesq_padrao" DataSetName="frxDB_usuarios" Frame.Typ="0" Text="[frxDB_usuarios.&#34;CADASTRO&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</inherited>

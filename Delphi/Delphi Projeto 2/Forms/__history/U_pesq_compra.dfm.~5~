@@ -1,0 +1,41 @@
+inherited frm_pesq_compra: Tfrm_pesq_compra
+  Caption = 'PESQUISA COMPRA'
+  ExplicitWidth = 1125
+  ExplicitHeight = 778
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    inherited cb_chave_pesquisa: TComboBox
+      Items.Strings = (
+        'C'#211'DIGO DA COMPRA'
+        'C'#211'DIGO FORNECEDOR'
+        'C'#211'DIGO FORMA DE PGTO'
+        'USUARIO'
+        'CADASTRO'
+        'PER'#205'ODO'
+        'TODOS')
+    end
+    inherited bt_pesquisa: TBitBtn
+      OnClick = bt_pesquisaClick
+    end
+  end
+  inherited Q_pesq_padrao: TFDQuery
+    SQL.Strings = (
+      'SELECT A.ID_COMPRA,'
+      'A.ID_FORNECEDOR,'
+      'B.NOME,'
+      'A.ID_FORMA_PGTO,'
+      'C.DESCRICAO,'
+      'A.USUARIO,'
+      'A.CADASTRO,'
+      'A.VALOR FROM COMPRA A, FORNECEDOR B, FORMA_PGTO C'
+      'WHERE A.ID_FORNECEDOR = B.ID_FORNECEDOR'
+      'AND C.ID_FORMA_PGTO=A.ID_FORMA_PGTO'
+      'ORDER BY A.ID_COMPRA')
+  end
+  inherited Rel_pesq_padrao: TfrxReport
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+end
