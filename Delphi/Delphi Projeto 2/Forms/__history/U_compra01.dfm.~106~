@@ -387,8 +387,6 @@ inherited Frm_compra01: TFrm_compra01
     ExplicitWidth = 1116
     ExplicitHeight = 266
     inherited Item_compra: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
       ExplicitWidth = 1108
       ExplicitHeight = 238
       inherited dbgrid: TDBGrid
@@ -443,8 +441,6 @@ inherited Frm_compra01: TFrm_compra01
       end
     end
     inherited Contas_pagar: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
       ExplicitWidth = 1108
       ExplicitHeight = 238
       object DBGrid1: TDBGrid

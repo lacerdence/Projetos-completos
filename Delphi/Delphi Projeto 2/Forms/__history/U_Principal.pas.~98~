@@ -74,7 +74,6 @@ type
     procedure SpeedButton9Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure SpeedButton8Click(Sender: TObject);
-    procedure Abre_tela_venda();
     
   private
     { Private declarations }
@@ -128,7 +127,7 @@ end;
 
 procedure TFrm_Principal.SpeedButton8Click(Sender: TObject);
 begin
-  Abre_tela_venda();
+  Abre_tela_vendas();
 
 end;
 
@@ -248,19 +247,6 @@ begin
      frm_usuario.Free;
      frm_usuario:=nil;
   end;
-end;
-
-procedure TFrm_Principal.Abre_tela_venda;
-begin
-  Frm_venda:=Tfrm_venda.Create(Self);
-  Frm_venda.ShowModal;
-  try
-
-  finally
-    Frm_venda.Free;
-    Frm_venda:=nil;
-  end;
-
 end;
 
 procedure TFrm_Principal.bt_UsuarioClick(Sender: TObject);

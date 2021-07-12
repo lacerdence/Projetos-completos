@@ -1,0 +1,118 @@
+inherited Frm_pesq_venda: TFrm_pesq_venda
+  Caption = 'FORMUL'#193'RIO DE PESQUISA DE VENDAS'
+  ExplicitWidth = 1125
+  ExplicitHeight = 778
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited DBGrid1: TDBGrid
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_VENDA'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ID_CLIENTE'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ID_FORMA_PGTO'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCRICAO'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'USUARIO'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CADASTRO'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VALOR'
+        Visible = True
+      end>
+  end
+  inherited Q_pesq_padrao: TFDQuery
+    SQL.Strings = (
+      'SELECT A.ID_VENDA,'
+      'A.ID_CLIENTE,'
+      'B.NOME,'
+      'A.ID_FORMA_PGTO,'
+      'C.DESCRICAO,'
+      'A.USUARIO,'
+      'A.CADASTRO,'
+      'A.VALOR FROM VENDA A, CLIENTE B, FORMA_PGTO C'
+      'WHERE A.ID_CLIENTE = B.ID_CLIENTE'
+      'AND C.ID_FORMA_PGTO=A.ID_FORMA_PGTO'
+      'ORDER BY A.ID_VENDA')
+    object Q_pesq_padraoID_VENDA: TIntegerField
+      FieldName = 'ID_VENDA'
+      Origin = 'ID_VENDA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object Q_pesq_padraoID_CLIENTE: TIntegerField
+      FieldName = 'ID_CLIENTE'
+      Origin = 'ID_CLIENTE'
+      Required = True
+    end
+    object Q_pesq_padraoNOME: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 100
+    end
+    object Q_pesq_padraoID_FORMA_PGTO: TIntegerField
+      FieldName = 'ID_FORMA_PGTO'
+      Origin = 'ID_FORMA_PGTO'
+      Required = True
+    end
+    object Q_pesq_padraoDESCRICAO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 100
+    end
+    object Q_pesq_padraoUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      Origin = 'USUARIO'
+      Required = True
+      Size = 100
+    end
+    object Q_pesq_padraoCADASTRO: TDateField
+      FieldName = 'CADASTRO'
+      Origin = 'CADASTRO'
+      Required = True
+    end
+    object Q_pesq_padraoVALOR: TFMTBCDField
+      FieldName = 'VALOR'
+      Origin = 'VALOR'
+      Precision = 18
+      Size = 2
+    end
+  end
+  inherited Rel_pesq_padrao: TfrxReport
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+end

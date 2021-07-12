@@ -324,7 +324,6 @@ begin
               Q_padrao_item.Next;
             end;
         end;
-        //Exclui o cabeçalho
         inherited;
     end
     else

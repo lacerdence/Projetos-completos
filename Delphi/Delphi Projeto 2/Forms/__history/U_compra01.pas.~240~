@@ -110,7 +110,6 @@ type
     procedure bt_PesquisarClick(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
     procedure db_id_forma_pgtoExit(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -302,14 +301,6 @@ procedure TFrm_compra01.bt_DeletarClick(Sender: TObject);
 begin
   if MessageDlg('Deseja excluir todo o registro ? ',mtConfirmation,[mbOk,mbNo],0)=mrOk then
     begin
-      // Exclui as parcelas
-      Q_conta_pagar.First;
-      while not Q_conta_pagar.Eof do
-      begin
-        Q_conta_pagar.Delete;
-        Q_conta_pagar.Next;
-      end;
-      //Exclui os itens de compra
       Q_padrao_item.First;
       while Q_padrao_item.RecordCount > 0 do
         begin
@@ -324,7 +315,6 @@ begin
               Q_padrao_item.Next;
             end;
         end;
-        //Exclui o cabeçalho
         inherited;
     end
     else
@@ -337,7 +327,7 @@ begin
 // CARGA NA QUERY E ABRE UMA NVOA LINHA
   inherited;
   Q_padraoCADASTRO.AsDateTime:=Date;
-  Q_padraoUSUARIO.AsString:=dm.usuario;
+  Q_padraoUSUARIO.AsString:='edivaldo';
   Q_padraoVALOR.AsCurrency:=0;
   db_id_fornecedor.SetFocus;
 
@@ -398,16 +388,6 @@ begin
     bt_item.SetFocus;
 
 
-end;
-
-procedure TFrm_compra01.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  inherited;
-  Q_fornecedor.Close;
-  Q_forma_pgto.Close;
-  Q_conta_pagar.Close;
-  Q_padrao.Close;
-  Q_padrao_item.Close;
 end;
 
 end.

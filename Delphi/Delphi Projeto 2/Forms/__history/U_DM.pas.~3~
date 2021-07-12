@@ -26,7 +26,6 @@ type
     { Private declarations }
   public
     { Public declarations }
-    VAR usuario, tipo_usuario: String
   end;
 
 var

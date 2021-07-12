@@ -1,0 +1,12 @@
+inherited Frm_pesq_venda: TFrm_pesq_venda
+  Caption = 'FORMUL'#193'RIO DE PESQUISA DE VENDAS'
+  ExplicitWidth = 1125
+  ExplicitHeight = 778
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Rel_pesq_padrao: TfrxReport
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+end

@@ -250,19 +250,6 @@ begin
   end;
 end;
 
-procedure TFrm_Principal.Abre_tela_venda;
-begin
-  Frm_venda:=Tfrm_venda.Create(Self);
-  Frm_venda.ShowModal;
-  try
-
-  finally
-    Frm_venda.Free;
-    Frm_venda:=nil;
-  end;
-
-end;
-
 procedure TFrm_Principal.bt_UsuarioClick(Sender: TObject);
 begin
   Abre_Tela_Usuario;

@@ -73,8 +73,6 @@ type
     procedure About1Click(Sender: TObject);
     procedure SpeedButton9Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure SpeedButton8Click(Sender: TObject);
-    procedure Abre_tela_venda();
     
   private
     { Private declarations }
@@ -91,7 +89,7 @@ implementation
 
 uses U_usuario, U_Empresa, U_cliente, U_Fornecedor, U_produto, U_Forma_pgto,
   U_compra01, U_pesquisa_usuario, U_Pesq_Fornecedor, U_pesq_cliente,
-  U_pesq_produto, U_pesq_compra, u_ABOUT, U_DM, U_login, u_venda;
+  U_pesq_produto, U_pesq_compra, u_ABOUT, U_DM, U_login;
 
 procedure TFrm_Principal.SpeedButton10Click(Sender: TObject);
 begin
@@ -124,12 +122,6 @@ end;
 procedure TFrm_Principal.SpeedButton7Click(Sender: TObject);
 begin
   Abre_Tela_Compra01
-end;
-
-procedure TFrm_Principal.SpeedButton8Click(Sender: TObject);
-begin
-  Abre_tela_venda();
-
 end;
 
 procedure TFrm_Principal.SpeedButton9Click(Sender: TObject);
@@ -250,19 +242,6 @@ begin
   end;
 end;
 
-procedure TFrm_Principal.Abre_tela_venda;
-begin
-  Frm_venda:=Tfrm_venda.Create(Self);
-  Frm_venda.ShowModal;
-  try
-
-  finally
-    Frm_venda.Free;
-    Frm_venda:=nil;
-  end;
-
-end;
-
 procedure TFrm_Principal.bt_UsuarioClick(Sender: TObject);
 begin
   Abre_Tela_Usuario;
@@ -278,11 +257,7 @@ begin
   //Desabilita menu e botão
   if dm.tipo_usuario='APOIO' then
     begin
-      bt_empresa.Enabled:=False;
-      bt_usuario.Enabled:=False;
-      menu_usuario.Enabled:=False;
-      menu_empresa.Enabled:=False;
-      ListaUsuarios.Enabled:=False;
+      bt_empresa.Enabled:=False
     end;
 
 end;

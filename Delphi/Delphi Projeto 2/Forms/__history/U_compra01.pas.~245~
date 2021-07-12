@@ -306,10 +306,9 @@ begin
       Q_conta_pagar.First;
       while not Q_conta_pagar.Eof do
       begin
-        Q_conta_pagar.Delete;
-        Q_conta_pagar.Next;
+        Q_conta_receber.Delete;
+        Q_conta_receber.Next;
       end;
-      //Exclui os itens de compra
       Q_padrao_item.First;
       while Q_padrao_item.RecordCount > 0 do
         begin
@@ -324,7 +323,6 @@ begin
               Q_padrao_item.Next;
             end;
         end;
-        //Exclui o cabeçalho
         inherited;
     end
     else

@@ -13,7 +13,6 @@ object Frm_Principal: TFrm_Principal
   Menu = MainMenu1
   OldCreateOrder = False
   WindowState = wsMaximized
-  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -2927,7 +2926,7 @@ object Frm_Principal: TFrm_Principal
       OnClick = SpeedButton7Click
     end
     object SpeedButton8: TSpeedButton
-      Left = 768
+      Left = 765
       Top = 0
       Width = 100
       Height = 90
@@ -3455,7 +3454,6 @@ object Frm_Principal: TFrm_Principal
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
       ParentFont = False
-      OnClick = SpeedButton8Click
     end
     object SpeedButton9: TSpeedButton
       Left = 874
