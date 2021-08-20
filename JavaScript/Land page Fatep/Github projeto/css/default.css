@@ -1,0 +1,139 @@
+/***** DEFAULT *****/
+* {
+    margin: 0 auto;
+    padding: 0;
+    color: #34404e;
+}
+.espacatop30px { padding-top: 30px; }
+.espacatop20px { padding-top: 20px; }
+.espacatop10px { padding-top: 10px; }
+
+.aligncenter { text-align: center; }
+.alignjustify { text-align: justify; }
+/***** /DEFAULT *****/
+
+/***** HEADER *****/
+.headertopo {
+    min-height: 110px;
+}
+.headertopo .headerlogo {
+    margin-top: 25px;
+}
+
+.headertopo .headerdados {
+    padding-top: 10px;
+    text-align: right;
+}
+.headertopo .headerdados h4 {
+    font-weight: bold;
+}
+/***** /HEADER *****/
+
+/***** DESCRITIVO SITE *****/
+.descritivosite {
+    text-align: justify;
+    background: #f9f9f9;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+.descritivosite h1 {
+    margin: 10px 0 30px;
+    color: #0d3d81;
+    font-family: "Arial Black", sans-serif;
+}
+/***** /DESCRITIVO SITE *****/
+
+/***** LISTA EVENTOS *****/
+.diferenciais {
+    text-align: justify;
+}
+.diferenciais a {
+    text-decoration: none;
+    color: #00428C;
+    font-weight: bold;
+}
+.diferenciais a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #00428C;
+}
+
+.listaeventos aside {
+    display: grid;
+}
+
+/**/
+@media (max-width: 620px) {
+    .listaeventos aside {
+        margin-top: 30px;
+        border: 1px solid red;
+    }
+}
+/**/
+
+.listaeventos aside article {
+    width: 260px;
+    height: 152px;
+    /*float: left;*/
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.listaeventos aside .artigo001 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/02/aula-magna-administracao-130220201-270x152.jpg');
+}
+.listaeventos aside .artigo002 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/03/aula-online-270x152.jpg');
+}
+
+.listaeventos aside article .conteudoartigo {
+    background-color: rgba(255,255,255,0.6);
+    position: relative;
+    top: 44px;
+    min-height: 87px;
+}
+.listaeventos aside article .conteudoartigo h4 {
+    color: #00933f;
+    font: bold 14px Roboto, sans-serif;
+}
+.listaeventos aside article .conteudoartigo p {
+    padding: 10px 0 0 0;
+    /*padding-top: 10px;*/
+    color: #00428C;
+    font-weight: bold;
+}
+/***** /LISTA EVENTOS *****/
+
+/***** FOOTER *****/
+footer {
+    background-color: #1a1a1a;
+    margin-top: 40px;
+    padding: 40px 0;
+    color: #808080;
+}
+footer a {
+    color: #808080;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+footer .logotiporodape {
+    width: 220px;
+}
+footer hr {
+    border: 1px solid #808080;
+}
+footer h3 {
+    font: 20px Roboto, sans-serif;
+    color: #FFF;
+}
+footer ul li {
+    list-style: none;
+}
+footer p {
+    color: #808080;
+}
+/***** /FOOTER *****/
