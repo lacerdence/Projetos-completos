@@ -1,0 +1,122 @@
+.menulistagem {
+    background: #00933f;
+}
+nav.mainnav {
+    /*background-color: #00933f;*/
+    min-height: 38px;
+}
+nav.mainnav ul {
+    width: 100%;
+    margin: 0;
+}
+nav.mainnav ul li {
+    float:left;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    font: 16px Roboto, sans-serif;
+}
+nav.mainnav ul li a {
+    color: #FFF;
+    float: left;
+    margin: 0 0.8em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav.mainnav ul li a:hover {
+    background: #eee;
+    color: #00933f;
+    text-decoration: underline;
+}
+
+/* SUBNAV */
+nav.mainnav ul li.subnav a.dropdown {
+    background-image: url(https://www.aciarp.com.br/images/arrow-down.png);
+    background-position: right 6px center;
+    background-repeat: no-repeat;
+    margin-right: 1em;
+    padding: 10px 20px;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo {
+    background: #00933f;
+    display: none; /* ESCONDE SUBMENU */
+    left: 0;
+    margin: 0 0.8em;
+    position: absolute;
+    top: 38px;
+    width: 200px;
+    z-index: 1000;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo li.subsubnav:hover {
+    background-color: #00933f;
+    color: #fff;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo li {
+    margin: 0 !important;
+    width: 100%;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo li a {
+    background: #00933f !important;
+    color: #fff;
+    height: auto;
+    line-height: 2em;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo li a:hover {
+    background: #eee !important;
+    color: #00933f;
+    text-decoration: underline;
+}
+
+/* HOVER PARA SUBNAV */
+nav.mainnav ul li.subnav:hover ul.dropdown-conteudo { display: block; }
+
+/* SUBNAV-1 */
+nav.mainnav ul li.subnav ul.dropdown-conteudo 
+li.subsubnav a.subdropdown {
+    background-image: url(https://www.aciarp.com.br/images/arrow-down.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: right 20px center!important;
+    margin-right: -35px!important;
+    padding-right: 40px!important;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo 
+li.subsubnav ul.dropdown-sub-conteudo {
+    background-color: #00933f;
+    display: none;
+    left: 200px;
+    position: absolute;
+    width: 300px;
+    z-index: 1000;
+    top: 18px;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo
+li.subsubnav {
+    margin: 0 !important;
+    width: 100%;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo 
+li.subsubnav ul.dropdown-sub-conteudo a {
+    background: #00933f !important;
+    font-size: 1.2em;
+    height: auto;
+    line-height: 1.0em;
+    padding: 1.0em;
+    width: 100%;
+}
+nav.mainnav ul li.subnav ul.dropdown-conteudo 
+li.subsubnav ul.dropdown-sub-conteudo a:hover {
+    background: #eee !important;
+    color: #00933f;
+    text-decoration: underline;
+}
+/* HOVER PARA SUBMENU */
+nav.mainnav ul li.subnav ul.dropdown-conteudo 
+li.subsubnav:hover ul.dropdown-sub-conteudo {
+    background-color: #00933f;
+    display: block;
+}

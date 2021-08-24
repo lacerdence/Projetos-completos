@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Exercícios - Módulo 09 | HTML 5</title>
+
+        <!-- ICON -->
+        <link rel="icon" href="https://www.fateppiracicaba.edu.br/wp-content/themes/fatep/assets/images/favicon.png"/>
+        <!--/ICON -->
+
+        <!-- CSS -->
+        <link href="css/default.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/menunav.css" rel="stylesheet" type="text/css" media="screen">
+        <!-- /CSS -->
+
+        <!-- JQUERY -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <!-- /JQUERY -->
+
+        <!-- TIPOGRAFIA --> <!-- :wght@100 -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+        <!-- /TIPOGRAFIA -->
+
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/ddbfec4c39.js" crossorigin="anonymous"></script>
+        <!-- /FONT AWESOME -->
+
+        <!-- MODERNIZR PARA DETECTAR FEATURES DE HTML5 - (CUSTOMIZADA): https://modernizr.com -->
+        <script src="js/modernizr-custom.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <!-- /BOOTSTRAP -->
+
+        <!-- Slider -->
+        <script src="js/lib/bxslider/jquery.bxslider.min.js"></script>
+        <link href="js/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
+        <!-- //Slider -->
+    </head>
+
+    <body>
+        <header class="headertopo"><!-- HEADER -->
+            <section><!-- SECTION -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="headerlogo">
+                                <a href="https://www.fateppiracicaba.edu.br" target="_blank">
+                                    <img src="https://www.fateppiracicaba.edu.br/wp-content/themes/fatep/assets/images/fatep/logo-fatep.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12"><!-- INSERI AS REDES SOCIAIS -->
+                            <p class="icoredessociais">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fas fa-envelope-square"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="headerdados">
+                                <h4>ENDEREÇO</h4>
+                                <p>
+                                    Av. Rio Claro nº 290 - Bairro Areião CEP 13.414-048<br>
+                                    Piracicaba/SP | Fone: 3432-9957 / 3301-2550
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+        </header>
+
+        <main>
+            <div class="menulistagem">
+                <div class="container">
+                    <nav class="mainnav"><!-- NAV -->
+                        <ul class="content">
+                            <li class="subnav">
+                                <a href="#" title="HOME">HOME</a>
+                            </li>
+                            <li class="subnav">
+                                <a class="dropdown" href="javascript:void(0);" title="INSTITUCIONAL">INSTITUCIONAL</a>
+                                <ul class="dropdown-conteudo">
+                                    <li class="subsubnav"><a href="#" target="_self" title="SOBRE">SOBRE</a></li>
+                                    <li class="subsubnav"><a href="#" target="_self" title="Informativos">Informativos</a></li>
+                                    <li class="subsubnav"><a href="#" target="_self" title="Gestão Vigente">Gestão Vigente</a></li>
+                                    <li class="subsubnav"><a href="#" target="_self" title="Palavra da Presidente">Palavra da Presidente</a></li>
+                                    <li class="subsubnav"><a href="#" target="_self" title="Vantagens do Associado">Vantagens do Associado</a></li>
+                                    <li class="subsubnav"><a href="#" target="_self" title="Ex-Presidentes">Ex-Presidentes</a></li>
+                                </ul>
+                            </li>
+                            <li class="subnav">
+                                <a class="dropdown" href="javascript:void(0);" target="_self" title="CONSULTAS SCPC">CONSULTAS SCPC</a>
+                                <ul class="dropdown-conteudo">
+                                    <li class="subsubnav"><a href="#" target="_self" title="CADASTRO POSITIVO">CADASTRO POSITIVO</a></li>
+                                    <li class="subsubnav">
+                                        <a class="dropdown" href="javascript:void(0);" target="_self" title="Pessoa Física">Pessoa Física</a>
+                                        <ul class="dropdown-sub-conteudo">
+                                            <li class="subsubnav"><a href="#" target="_self" title="CPF">CPF</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="subsubnav"><a href="#" title="Pessoa Jurídica">Pessoa Jurídica</a></li>
+                                    <li class="subsubnav"><a href="#" title="Inclusão de inadimplentes">Inclusão de inadimplentes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="sliders">
+                <!-- Banner -->
+                <div class="slider">
+                    <ul class="bxslider">
+                        <li>
+                            <a href="#" title="BANNER 01" target="_self">
+                                <img src="https://www.fateppiracicaba.edu.br/wp-content/uploads/2016/10/dsc-0316.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="BANNER 02" target="_self">
+                                <img src="https://www.fateppiracicaba.edu.br/wp-content/uploads/2021/02/1-1.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="BANNER 03" target="_self">
+                                <img src="https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/11/webdoor-l1-1.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="descritivosite"><!-- SECTION -->
+                <div class="container">
+                    <h1>INTRODUÇÃO A DESENVOLVIMENTO DE SITES</h1>
+                    <h3>OBJETIVOS DO CURSO</h3>
+
+                    <p>Capacitar o aluno para desenvolver sites – HTML, destacando textos, imagens, links, novos elementos estruturais do HTML 5, fundamentos do CSS e Java script e Banco de Dados MySQL e Introdução aos desenvolvimento PHP.</p>
+                </div>
+            </section>
+
+            <section class="listaeventos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <aside><!-- ASIDE -->
+                                <article class="artigo001">
+                                    <div class="conteudoartigo">
+                                        <p>7 de abril de 2020</p>
+                                        <h5>NOTA OFICIAL – SEMANA DE PROVAS DO PRIMEIRO BIMESTRE</h5>
+                                    </div>
+                                </article>
+                                <article class="artigo002">
+                                    <div class="conteudoartigo">
+                                        <p>27 de março de 2020</p>
+                                        <h5>FAQ | COVID-19</h5>
+                                    </div>
+                                </article>
+                                <article class="artigo003">
+                                    <div class="conteudoartigo">
+                                        <p>25 de março de 2020</p>
+                                        <h5>Comunicado 25.03.2020</h5>
+                                    </div>
+                                </article>
+                                <article class="artigo004">
+                                    <div class="conteudoartigo">
+                                        <p>23 de março de 2020</p>
+                                        <h5>Comunicado 23.03.2020</h5>
+                                    </div>
+                                </article>                                
+                            </aside>
+                        </div>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
+                            <div class="diferenciais">
+                                <h2 class="margintop0">CONTEÚDO PROGRAMÁTICO</h2>
+                                <p><strong>Módulo 01 – Curso HTML 5 Essencial</strong></p>
+                                <p>Apresentação do curso</p>
+                                <p>Um breve histórico sobre HTML</p>
+                                <p>Diferença entre HTML / HTML 5</p>
+                                <p>Mercado de trabalho</p>
+                                <br><br>
+
+                                <p><strong>Módulo 02 – Softwares e configurações</strong></p>
+                                <p>
+                                    Softwares recomendados:<br>
+                                    <ul>
+                                        <li>FileZilla</li>
+                                        <li>WampServer</li>
+                                        <li>Sublime Text ...</li>
+                                    </ul>
+                                </p>
+                                <p>Configuração de servidor interno</p>
+                                <p>Configuração do WampServer (php.ini)</p>
+                                <br><br>
+
+                                <p><strong>Módulo 03 – Básico do HTML</strong></p>
+                                <p>Criar a primeira página em HTML 5</p>
+                                <p>Estrutura básica HTML</p>
+                                <p>Adicionar as primeiras tags</p>
+                                <br />
+                                
+                                <p class="alignright">
+                                    <strong>INSTRUTOR</strong><br>
+                                    Sidmar de Campos<br>
+                                    <em>Analista de sistemas</em><br>
+                                    <a href="https://www.agenciabracodigital.com.br" target="_blank">www.agenciabracodigital.com.br</a><br>
+                                    <a href="mailto:scampos@fateppiracicaba.edu.br">scampos@fateppiracicaba.edu.br</a><br>
+                                    <a href="mailto:sidmarcampos@gmail.com">sidmarcampos@gmail.com</a><br>
+                                    (19) 98271-4843 – Piracicaba/SP<br>
+                                    Instagram: <a href="https://www.instagram.com/sidmar_campos" target="_blank">@sidmar_campos</a><br>
+                                    WhatsApp: <a href="https://wa.me/+5519982714843" target="_blank">(19) 98271-4843</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img src="https://www.fateppiracicaba.edu.br/wp-content/themes/fatep/assets/images/fatep/logo-footer.png" class="logotiporodape" />
+                        </div>
+                    </div>
+                    <div class="row espacatop40px"><!-- AUMENTEI O ESPAÇAMENTO -->
+                        <div class="col-md-3 col-sm-6 col-xs-6"><!-- MUDEI A ORDEM -->
+                            <h3>PRINCIPAL</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Graduação</a></li>
+                                <li><a href="#">Pós-Graduação</a></li>
+                                <li><a href="#">Contato</a></li>
+                                <li><a href="#">Cursos de Extensão</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6"><!-- MUDEI A ORDEM -->
+                            <h3>A FATEP</h3>
+                            <ul>
+                                <li><a href="#">Apresentação</a></li>
+                                <li><a href="#">Estrutura</a></li>
+                                <li><a href="#">Diferenciais</a></li>
+                                <li><a href="#">Identidade</a></li>
+                                <li><a href="#">Localização</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <h3>SEDE</h3>
+                            <p>
+                                Av. Rio Claro nº 290 - Bairro Areião<br>
+                                CEP 13.414-048 - Piracicaba/SP<br>
+                                Fone: 3432-9957 / 3301-2550
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <h3>ATENDIMENTO</h3>
+                            <p>
+                                A Secretaria Acadêmica atende das 12h às 22:30h, de segunda a sexta-feira.<!-- ALTEREI O TEXTO -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <hr />
+                        <p class="aligncenter">Copyright © 2021, Faculdade de Tecnologia de Piracicaba</p><!-- ALTEREI O TEXTO -->
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: false
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,175 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    color: #34404e;
+}
+.espacatop40px {
+    padding-top: 40px;
+}
+.aligncenter {
+    text-align: center;
+}
+.alignright {
+    text-align: right;
+}
+.margintop0 { margin-top: 0; }
+.margintop10px { margin-top: 10px; }
+
+/***** REDES SOCIAIS *****/
+.fa-facebook-square { color: #3a589e; }
+.fa-instagram-square { color: #c5008d; }
+.fa-youtube-square { color: #fe0002; }
+.fa-twitter-square { color: #4e9fee; }
+.fa-envelope-square { color: #9f9f9f; }
+/***** /REDES SOCIAIS *****/
+
+/***** HEADER *****/
+.headertopo {
+    min-height: 110px;
+}
+.headertopo .headerlogo {
+    margin-top: 25px;
+}
+
+.headertopo .headerdados {
+    padding-top: 10px;
+    text-align: right;
+}
+.headertopo .headerdados h4 {
+    font-weight: bold;
+}
+
+.headertopo .icoredessociais {
+    text-align: center;
+    margin-top: 50px;
+}
+.headertopo .icoredessociais i {
+    font-size: 30px;
+    margin: 0 4px;
+}
+.headertopo .icoredessociais a:hover i { color: #8fb435!important; }
+
+/***** /HEADER *****/
+
+/***** DESCRITIVO SITE *****/
+.descritivosite {
+    text-align: justify;
+    background: #f9f9f9;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+.descritivosite h1 {
+    margin: 10px 0 10px;
+    color: #0d3d81;
+    font: 40px 'Bebas Neue', cursive;
+}
+.descritivosite h3 {
+    margin: 0 0 20px;
+    color: #00933f;
+    font: 26px 'Bebas Neue', cursive;
+}
+/***** /DESCRITIVO SITE *****/
+
+/***** LISTA EVENTOS *****/
+.diferenciais {
+    font-size: 16px;
+    text-align: justify;
+}
+.diferenciais h2 {
+    font: 36px 'Indie Flower', cursive;
+}
+.diferenciais ul { padding-left: 40px; }
+.diferenciais a {
+    text-decoration: none;
+    color: #00428C;
+    font-weight: bold;
+}
+.diferenciais a:hover {
+    text-decoration: underline;
+    color: #00428C;
+    font-weight: bold;
+}
+
+.listaeventos aside {
+    display: grid;
+}
+
+@media (max-width: 620px) {
+    .listaeventos aside {
+        margin-top: 30px;
+        border: 1px solid red;
+    }
+}
+
+.listaeventos aside > article {
+    width: 260px;
+    height: 152px;
+    float: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.listaeventos aside > .artigo001 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/04/semana-de-prova-270x152.jpg');
+}
+.listaeventos aside > .artigo002 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/03/nota-coronavirus-ok-270x152.png');
+}
+.listaeventos aside > .artigo003 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/03/aula-online-270x152.jpg');
+}
+.listaeventos aside > .artigo004 {
+    background-image: url('https://www.fateppiracicaba.edu.br/wp-content/uploads/2020/03/nota-coronavirus-ok-270x152.png');
+}
+
+.listaeventos aside > article .conteudoartigo {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    top: 44px;
+    min-height: 87px;
+}
+.listaeventos aside > article .conteudoartigo h5 {
+    color: #00428C;
+    font: bold 14px Roboto, sans-serif;
+}
+.listaeventos aside > article .conteudoartigo p {
+    padding: 10px 0 0 0;
+    color: #00933f;
+    font-weight: bold;
+}
+/***** /LISTA EVENTOS *****/
+
+/***** FOOTER *****/
+footer {
+    background-color: #0d3d81;
+    margin-top: 40px;
+    padding: 40px 0;
+    color: #bbbbbb;
+}
+footer hr {
+    border: 1px solid #bbbbbb;
+}
+footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #bbbbbb;
+    text-decoration: underline;
+}
+footer .logotiporodape {
+    width: 220px;
+}
+footer h3 {
+    font: 20px Roboto, sans-serif;
+    color: #FFF;
+}
+footer ul li {
+    list-style: none;
+    color: #bbbbbb;
+}
+footer p {
+    color: #bbbbbb;
+}
+/***** /FOOTER *****/
