@@ -1,0 +1,14 @@
+program EscolaModelo;
+
+uses
+  Vcl.Forms,
+  unitPrincipal in 'principal\unitPrincipal.pas' {frmPrincipal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

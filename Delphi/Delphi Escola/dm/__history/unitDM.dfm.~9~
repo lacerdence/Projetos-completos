@@ -1,0 +1,29 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 479
+  Width = 792
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=escolamodelo'
+      'User_Name=root'
+      'Password=password'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 152
+    Top = 96
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Program Files (x86)\Embarcadero\Studio\21.0\bin64\libmysql.dl' +
+      'l'
+    Left = 320
+    Top = 256
+  end
+  object tbResponsaveis: TFDTable
+    Connection = Conexao
+    TableName = 'escolamodelo.responsaveis'
+    Left = 384
+    Top = 160
+  end
+end

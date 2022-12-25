@@ -1,0 +1,175 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 479
+  Width = 792
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=escolamodelo'
+      'User_Name=root'
+      'Password=password'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 152
+    Top = 96
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Program Files (x86)\Embarcadero\Studio\21.0\bin64\libmysql.dl' +
+      'l'
+    Left = 152
+    Top = 152
+  end
+  object tbResponsaveis: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    TableName = 'escolamodelo.responsaveis'
+    Left = 304
+    Top = 104
+    object tbResponsaveisid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ReadOnly = True
+    end
+    object tbResponsaveisnome: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 80
+    end
+    object tbResponsaveisrg: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'rg'
+      Origin = 'rg'
+    end
+    object tbResponsaveiscpf: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cpf'
+      Origin = 'cpf'
+      EditMask = '###.###.###-##;1;_'
+      Size = 14
+    end
+    object tbResponsaveiscelular: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'celular'
+      Origin = 'celular'
+      EditMask = '(##) #.####-####;1;_'
+      Size = 16
+    end
+    object tbResponsaveisoperadora: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'operadora'
+      Origin = 'operadora'
+    end
+    object tbResponsaveisemail: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'email'
+      Origin = 'email'
+      Size = 255
+    end
+    object tbResponsaveisparentesco: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'parentesco'
+      Origin = 'parentesco'
+      Size = 15
+    end
+  end
+  object DSResponsaveis: TDataSource
+    DataSet = tbResponsaveis
+    Left = 360
+    Top = 104
+  end
+  object tbAlunos: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    TableName = 'escolamodelo.alunos'
+    Left = 304
+    Top = 200
+    object tbAlunosid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object tbAlunosnome: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 80
+    end
+    object tbAlunosendereco: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'endereco'
+      Origin = 'endereco'
+      Size = 255
+    end
+    object tbAlunosbairo: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'bairo'
+      Origin = 'bairo'
+      Size = 45
+    end
+    object tbAlunoscidade: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cidade'
+      Origin = 'cidade'
+      Size = 45
+    end
+    object tbAlunosuf: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'uf'
+      Origin = 'uf'
+      Size = 2
+    end
+    object tbAlunoscep: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'cep'
+      Origin = 'cep'
+      Size = 9
+    end
+    object tbAlunoscelular: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'celular'
+      Origin = 'celular'
+      Size = 16
+    end
+    object tbAlunosoperadora: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'operadora'
+      Origin = 'operadora'
+    end
+    object tbAlunosemail: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'email'
+      Origin = 'email'
+      Size = 255
+    end
+    object tbAlunosautorizadoSairCom: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'autorizadoSairCom'
+      Origin = 'autorizadoSairCom'
+      Size = 50
+    end
+    object tbAlunosensinoReligioso: TShortintField
+      AutoGenerateValue = arDefault
+      FieldName = 'ensinoReligioso'
+      Origin = 'ensinoReligioso'
+    end
+    object tbAlunosAlunoscol: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'Alunoscol'
+      Origin = 'Alunoscol'
+      Size = 45
+    end
+    object tbAlunosresponsavelCarne: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'responsavelCarne'
+      Origin = 'responsavelCarne'
+    end
+  end
+  object DSAlunos: TDataSource
+    DataSet = tbAlunos
+    Left = 360
+    Top = 200
+  end
+end
