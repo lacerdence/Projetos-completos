@@ -39,6 +39,7 @@ type
     DBRadioGroup1: TDBRadioGroup;
     DBLookupComboBox1: TDBLookupComboBox;
     Label14: TLabel;
+    procedure txtLocalizarChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,5 +54,10 @@ implementation
 {$R *.dfm}
 
 uses unitDM;
+
+procedure TfrmCadAlunos.txtLocalizarChange(Sender: TObject);
+begin
+  dm.tbAlunos.Locate('Nome',txtLocalizar.Text,[loPartialKey]);
+end;
 
 end.

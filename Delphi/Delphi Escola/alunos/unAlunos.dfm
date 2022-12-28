@@ -152,7 +152,8 @@ object frmCadAlunos: TfrmCadAlunos
     Top = 235
     Width = 281
     Height = 21
-    TabOrder = 3
+    TabOrder = 14
+    OnChange = txtLocalizarChange
   end
   object DBGrid1: TDBGrid
     Left = 632
@@ -161,7 +162,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 182
     DataSource = dm.DSAlunos
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
-    TabOrder = 4
+    TabOrder = 3
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -182,7 +183,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'endereco'
     DataSource = dm.DSAlunos
-    TabOrder = 5
+    TabOrder = 4
   end
   object DBEdit4: TDBEdit
     Left = 96
@@ -191,7 +192,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'bairo'
     DataSource = dm.DSAlunos
-    TabOrder = 6
+    TabOrder = 5
   end
   object DBEdit5: TDBEdit
     Left = 288
@@ -200,7 +201,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'cidade'
     DataSource = dm.DSAlunos
-    TabOrder = 7
+    TabOrder = 6
   end
   object DBEdit6: TDBEdit
     Left = 96
@@ -209,16 +210,17 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'uf'
     DataSource = dm.DSAlunos
-    TabOrder = 8
+    TabOrder = 7
   end
   object DBEdit7: TDBEdit
     Left = 172
     Top = 403
-    Width = 149
+    Width = 147
     Height = 21
     DataField = 'cep'
     DataSource = dm.DSAlunos
-    TabOrder = 9
+    MaxLength = 10
+    TabOrder = 8
   end
   object DBEdit8: TDBEdit
     Left = 344
@@ -227,7 +229,8 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'celular'
     DataSource = dm.DSAlunos
-    TabOrder = 10
+    MaxLength = 15
+    TabOrder = 9
   end
   object DBEdit9: TDBEdit
     Left = 96
@@ -236,7 +239,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'operadora'
     DataSource = dm.DSAlunos
-    TabOrder = 11
+    TabOrder = 10
   end
   object DBEdit10: TDBEdit
     Left = 256
@@ -245,7 +248,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'email'
     DataSource = dm.DSAlunos
-    TabOrder = 12
+    TabOrder = 11
   end
   object DBEdit11: TDBEdit
     Left = 96
@@ -254,7 +257,7 @@ object frmCadAlunos: TfrmCadAlunos
     Height = 21
     DataField = 'autorizadoSairCom'
     DataSource = dm.DSAlunos
-    TabOrder = 13
+    TabOrder = 12
   end
   object DBRadioGroup1: TDBRadioGroup
     Left = 320
@@ -268,7 +271,7 @@ object frmCadAlunos: TfrmCadAlunos
     Items.Strings = (
       'Sim'
       'N'#227'o')
-    TabOrder = 14
+    TabOrder = 13
     Values.Strings = (
       '1'
       '0')

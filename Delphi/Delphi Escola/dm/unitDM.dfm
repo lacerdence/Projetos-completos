@@ -90,6 +90,7 @@ object dm: Tdm
     object tbAlunosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbAlunosnome: TStringField
       AutoGenerateValue = arDefault
@@ -125,12 +126,14 @@ object dm: Tdm
       AutoGenerateValue = arDefault
       FieldName = 'cep'
       Origin = 'cep'
+      EditMask = '00.000-000;1;_'
       Size = 9
     end
     object tbAlunoscelular: TStringField
       AutoGenerateValue = arDefault
       FieldName = 'celular'
       Origin = 'celular'
+      EditMask = '(00)0.0000-0000;1;_'
       Size = 16
     end
     object tbAlunosoperadora: TStringField
