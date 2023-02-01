@@ -101,7 +101,7 @@ object form_login: Tform_login
         Caption = 'SISMA'
         Color = clSkyBlue
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGrayText
+        Font.Color = 42495
         Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = [fsBold]
@@ -336,7 +336,7 @@ object form_login: Tform_login
       Width = 185
       Height = 41
       BevelOuter = bvNone
-      Color = cl3DDkShadow
+      Color = 42495
       ParentBackground = False
       TabOrder = 3
       object SpeedButton1: TSpeedButton
