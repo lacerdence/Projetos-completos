@@ -1,0 +1,15 @@
+package br.com.antonio;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class FooBarTest {
+
+	@Test
+	void test() {
+		//fail("Not yet implemented");
+		System.out.println("Helo JUnit 5 Jupiter");
+	}
+
+}

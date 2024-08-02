@@ -1,0 +1,12 @@
+INDEX VERSION 1.134+C:\Projetos Completos\Projetos\Java\TDD\workspace-spring-tool-suite-4-4.23.1.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+3400701691.index
+692065919.index
+1865797976.index
+1134810564.index
+4025569888.index
+2703493517.index
+1936453662.index
+3226148070.index
+3870408631.index
+3589687881.index
+1142063695.index
